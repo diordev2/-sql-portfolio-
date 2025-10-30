@@ -1,68 +1,99 @@
-# 🧠 Sakila Ma’lumotlar Bazasida SELECT va Alias (AS) Operatorlari bilan amaliy mashq qilish
+# 🧠 SQL O‘rganish Portfeli
 
 Assalomu alaykum!  
-Bu loyiha **“SELECT so‘rovlar va Alias (AS) qo‘llash”** mavzusida amaliy mashqlarni o‘z ichiga oladi.  
-Ushbu mashqlar **Sakila** ma’lumotlar bazasi bilan ishlash orqali bajarildi.  
-Ma’lumotlar bazasi — (MySQLning "Sakila" demo databazasidan foydalanildi
+Bu repozitoriya orqali men SQL bo‘yicha har kuni o‘rganayotgan mavzularimni kichik amaliy misollar orqali yozib boraman.  
+Har bir kun alohida `.sql` faylda saqlanadi — bu fayllarda real so‘rovlar, izohlar va o‘rganilgan operatorlar mavjud.
 
 ---
 
 ## 🎯 Maqsad
-- `SELECT` operatori yordamida ma’lumotlarni olishni o‘rganish  
-- `AS` yordamida ustun va jadval nomlariga alias (muvaqqat nom) berishni o‘rganish  
 
---
-
-## 🧱 Ishlatilgan jadval va ma’lumotlar bazasi
-**Sakila** ma’lumotlar bazasi quyidagi asosiy jadvallarni foydalanildi :  
-- `actor` — aktyorlar haqidagi ma’lumotlar  
-- `film` — filmlar ro‘yxati  
-- `staff` — do‘kon xodimlari  
-- `store` — do‘konlar  
-- `rental` — ijaraga berilgan filmlar
-- `customer` - mijozlar
-- `city` - shaharlar
+- SQL sintaksisini mustahkamlash  
+- Har kuni yangi operator yoki funksiya bilan ishlash  
+- Kichik, lekin amaliy loyihalar orqali tajriba orttirish  
+- Ishga kirishda portfel sifatida namoyish qilish
 
 ---
 
-## 🧩 Namuna so‘rovlari
-Quyida loyihada ishlatilgan ba’zi so‘rovlar keltirilgan:
+## 📂 Tuzilma
 
-```sql
--- 1. Bu kod `film` jadvalidan **film nomi** (`title`) va **chiqarilgan yili** (`release_year`) ustunlarini tanlaydi. `AS` yordamida ular natijada mos ravishda **"Title"** va **"Release Year"** nomlari bilan ko‘rsatiladi.
-SELECT title AS 'Title', release_year AS 'Release Year' 
-FROM film;
+```
 
+sql-portfolio/
+│
+├── README.md                # Loyihaning umumiy tavsifi
+├── queries/                 # Har kunlik SQL mashqlar
+│   ├── day01_select_basics.sql
+│   ├── day02_where_clause.sql
+│   ├── day03_orderby_limit.sql
+│   ├── day04_groupby.sql
+│   └── ...
+└── datasets/                # Foydalanilgan namunaviy ma'lumotlar
 
--- 2. Bu kod staff jadvalidan xodimning ismi (first_name), familiyasi (last_name) va manzil identifikatori (address_id) ustunlarini tanlaydi. AS orqali ular natijada "First Name", "Last Name" va "Address" nomlari bilan ko‘rsatiladi.
-SELECT first_name AS 'First Name',last_name AS 'Last Name',address_id AS 'Address'
-FROM staff;
+```
 
+---
 
--- 3.Bu kod rental jadvalidan ijara identifikatori (rental_id) va qaytarilgan sana (return_date) ustunlarini tanlaydi hamda shu ma’lumotlarni ekranga chiqaradi.
-SELECT rental_id, return_date
-FROM  rental;
+## 📘 O‘rganish Kunlari
 
--- 4. Bu kod city jadvalidan shahar identifikatori (city_id) va shahar nomi (city) ustunlarini tanlab, ularni natijada ko‘rsatadi.
-SELECT city_id,city
-FROM city;
+| Kun | Mavzu | Fayl |
+|------|--------|------|
+| 1 | SELECT asoslari va Alias (AS) operatori | [day01_select_basics.sql](queries/day01_select_basics.sql) |
+| 2 | WHERE sharti bilan filtrlash | [day02_where_clause.sql](queries/day02_where_clause.sql) |
+| 3 | ORDER BY va LIMIT | [day03_orderby_limit.sql](queries/day03_orderby_limit.sql) |
+| 4 | GROUP BY va agregat funksiyalar | [day04_groupby.sql](queries/day04_groupby.sql) |
+| 5 | JOIN turlari (INNER, LEFT, RIGHT) | [day05_joins.sql](queries/day05_joins.sql) |
+| 6 | Subquery (ichki so‘rovlar) | [day06_subqueries.sql](queries/day06_subqueries.sql) |
+| 7 | Amaliy mini loyiha (yakuniy mashq) | [day07_project.sql](queries/day07_project.sql) |
 
+---
 
--- 5.Bu kod store jadvalidan do‘kon identifikatori (store_id) va so‘nggi yangilanish sanasi (last_update) ustunlarini tanlab, ularni natijada ko‘rsatadi.
-SELECT store_id,last_update
-FROM store;
+## 🧩 Foydalanilgan Ma’lumotlar Bazasi
 
+Mashqlar davomida quyidagi namunaviy bazalardan foydalanilgan:
 
--- 6. Bu kod film jadvalidan film identifikatori (film_id), film nomi (title) va film davomiyligi (length) ustunlarini tanlab, ularni natijada ko‘rsatadi.
-SELECT film_id,title,length
-FROM film;
+- **Sakila** — MySQL demo database  
+- **Students** — o‘zim yaratgan kichik dataset (datasets/ papkasida)
 
+---
 
--- 7. Bu kod rental jadvalidan ijara identifikatori (rental_id), ijaraga olingan sana (rental_date) va qaytarilgan sana (return_date) ustunlarini tanlab, ularni natijada ko‘rsatadi.
-SELECT rental_id,rental_date,return_date
-FROM rental;
+## 📅 Qanday Yuritaman
 
+- Har kuni yangi `.sql` fayl yarataman (`queries/dayXX_topic.sql`)  
+- O‘sha kunda o‘rganilgan SQL buyruqlarini yozaman  
+- `README.md` faylga yangi qator qo‘shaman  
+- Haftaning oxirida qisqacha “xulosa” yozaman
 
---8. Bu kod address jadvalidan manzil (address), tuman yoki hudud (district) va pochta indeksi (postal_code) ustunlarini tanlaydi. AS yordamida ular natijada mos ravishda "Address", "District" va "Postal Code" nomlari bilan ko‘rsatiladi.
-SELECT address AS 'Address',district AS 'District',postal_code AS 'Postal Code'
-FROM address;
+---
+
+## 🧭 Foydalanilgan Asboblar
+
+- **MySQL Workbench** — asosiy muhit  
+- **VS Code** — tahrirlash uchun  
+- **GitHub** — portfel yuritish uchun  
+
+---
+
+## ✨ Aloqa
+
+Agar bu portfel sizga foydali bo‘lsa, yulduzcha ⭐ bosishni unutmang!  
+Savollar yoki takliflar uchun:  
+📧 diordev2@example.com *(o‘zingizning emailingizni yozing)*
+
+---
+
+```
+
+---
+
+### 🔍 Qanday foydalanasan:
+
+1. GitHub’da `README.md` ustiga bos.
+2. ✏️ (qalamcha) belgisini bos.
+3. Tepada “Edit file” oynasiga shu kodni **to‘liq nusxalab joylashtir**.
+4. Pastga tushib “Commit changes” bos.
+
+✅ Natijada `README.md` chiroyli, professional, va kunlik o‘rganish tizimiga mos bo‘ladi.
+Keyin faqat `queries/` papkasiga har kuni bitta yangi `.sql` fayl qo‘shib borasan.
+
+Xohlaysanmi, men senga shu README formatiga mos **birinchi kun uchun tayyor `day01_select_basics.sql`** fayl matnini ham beray?
