@@ -24,9 +24,9 @@ sql-portfolio/
 ├── README.md                # Loyihaning umumiy tavsifi
 ├── queries/                 # Har kunlik SQL mashqlar
 │   ├── day01_select_basics.sql
-│   ├── day02_where_clause.sql
-│   ├── day03_orderby_limit.sql
-│   ├── day04_groupby.sql
+│   ├── day02_clause.sql
+│   ├── day03y_limit.sql
+│   ├── day04.sql
 │   └── ...
 └── datasets/                # Foydalanilgan namunaviy ma'lumotlar
 
