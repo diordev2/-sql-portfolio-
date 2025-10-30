@@ -39,12 +39,6 @@ sql-portfolio/
 | Kun | Mavzu | Fayl |
 |------|--------|------|
 | 1 | SELECT asoslari va Alias (AS) operatori | [day01_select_basics.sql](queries/day01_select_basics.sql) |
-| 2 | WHERE sharti bilan filtrlash | [day02_where_clause.sql](queries/day02_where_clause.sql) |
-| 3 | ORDER BY va LIMIT | [day03_orderby_limit.sql](queries/day03_orderby_limit.sql) |
-| 4 | GROUP BY va agregat funksiyalar | [day04_groupby.sql](queries/day04_groupby.sql) |
-| 5 | JOIN turlari (INNER, LEFT, RIGHT) | [day05_joins.sql](queries/day05_joins.sql) |
-| 6 | Subquery (ichki so‘rovlar) | [day06_subqueries.sql](queries/day06_subqueries.sql) |
-| 7 | Amaliy mini loyiha (yakuniy mashq) | [day07_project.sql](queries/day07_project.sql) |
 
 ---
 
@@ -78,22 +72,8 @@ Mashqlar davomida quyidagi namunaviy bazalardan foydalanilgan:
 
 Agar bu portfel sizga foydali bo‘lsa, yulduzcha ⭐ bosishni unutmang!  
 Savollar yoki takliflar uchun:  
-📧 diordev2@example.com *(o‘zingizning emailingizni yozing)*
+📧 ishsearch090@gmail.com *(o‘zingizning emailingizni yozing)*
 
 ---
 
 ```
-
----
-
-### 🔍 Qanday foydalanasan:
-
-1. GitHub’da `README.md` ustiga bos.
-2. ✏️ (qalamcha) belgisini bos.
-3. Tepada “Edit file” oynasiga shu kodni **to‘liq nusxalab joylashtir**.
-4. Pastga tushib “Commit changes” bos.
-
-✅ Natijada `README.md` chiroyli, professional, va kunlik o‘rganish tizimiga mos bo‘ladi.
-Keyin faqat `queries/` papkasiga har kuni bitta yangi `.sql` fayl qo‘shib borasan.
-
-Xohlaysanmi, men senga shu README formatiga mos **birinchi kun uchun tayyor `day01_select_basics.sql`** fayl matnini ham beray?
