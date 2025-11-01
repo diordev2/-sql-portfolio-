@@ -34,11 +34,22 @@ sql-portfolio/
 
 ---
 
-## 📘 O‘rganish Kunlari
+# 🧠 SQL o‘rganish kundaligi
 
-| Kun | Mavzu | Fayl |
-|------|--------|------|
-| 1 | SELECT asoslari va Alias (AS) operatori | [day01_select_basics.sql](queries/day01_select_basics.sql) |
+## 📅 Day 01 — SELECT asoslari
+Bugun SELECT operatori bilan tanishdim.
+- `SELECT *` jadvaldagi barcha ustunlarni ko‘rsatadi.
+- `AS` yordamida ustunlarga boshqa nom berish mumkin.
+- `CONCAT()` yordamida ism va familiyani birlashtirishni o‘rgandim.
+🧩 Amaliy mashq: [day01_select_basics.sql](queries/day01_select_basics.sql)
+
+---
+
+## 📅 Day 02 — WHERE sharti
+Bugun `WHERE` operatori orqali ma’lumotlarni filtrlashni o‘rgandim.
+- `WHERE age > 20`
+- `AND` va `OR` operatorlarini ishlatish
+🧩 Amaliy mashq: [day02_where_clause.sql](queries/day02_where_clause.sql)
 
 ---
 
