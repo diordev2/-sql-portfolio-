@@ -1,3 +1,4 @@
+-- Sana 30/10/2025
 -- Sakila Demo Database (Rasmiy strukturasi - 5 qatorlik)
 -- MySQL Official Sakila Database strukturasiga asoslangan Database yaratamiz
 
