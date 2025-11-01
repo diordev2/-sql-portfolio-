@@ -1,8 +1,8 @@
 ```sql
 /* ===========================================================
-   📘 Day 01 — SELECT asoslari va Alias (AS) operatori
+   📘 Day 01 — SELECT asoslari va Alias (AS) , CONCAT() operatori
    Maqsad: SELECT operatori yordamida ma’lumotlarni olishni 
-           o‘rganish va AS yordamida ustunlarga laqab berish.
+   o‘rganish va AS yordamida ustunlarga laqab berish, ism va familiyani bitta ustunga birlashtirish
    Foydalanilgan ma’lumotlar bazasi: Sakila (MySQL demo DB)
    =========================================================== */
 
@@ -39,6 +39,28 @@ SELECT
     last_name 
 FROM actor
 LIMIT 10;
+--  Jadvaldagi barcha ma'lumotlarni ko‘ramiz
+SELECT * FROM students;
+
+-- 8️⃣ Faqat ism va familiya ustunlarini tanlaymiz
+SELECT first_name, last_name FROM students;
+
+-- 9️⃣ CONCAT() yordamida ism va familiyani bitta ustunga birlashtiramiz
+SELECT 
+    CONCAT(first_name, ' ', last_name) AS toliq_ism
+FROM students;
+
+-- 🔟 CONCAT() ichida boshqa matn qo‘shish ham mumkin
+SELECT 
+    CONCAT('Talaba: ', first_name, ' ', last_name) AS talaba_malumoti
+FROM students;
+
+-- 1️⃣1️⃣ Agar familiya yo‘q bo‘lsa (NULL bo‘lsa), CONCAT() avtomatik e'tiborsiz qoldiradi
+-- Quyidagi so‘rovda NULL qiymatlar ham chiqariladi
+SELECT 
+    id,
+    CONCAT(first_name, ' ', COALESCE(last_name, 'Familiya yo‘q')) AS toliq_ism
+FROM students;
 
 -- ✅ Yakuniy mashq:
 -- "actor" jadvalidan faqat A harfi bilan boshlanadigan aktyorlarning
