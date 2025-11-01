@@ -83,7 +83,7 @@ Mashqlar davomida quyidagi namunaviy bazalardan foydalanilgan:
 
 Agar bu portfel sizga foydali bo‘lsa, yulduzcha ⭐ bosishni unutmang!  
 Savollar yoki takliflar uchun:  
-📧 ishsearch090@gmail.com *(o‘zingizning emailingizni yozing)*
+📧 ishsearch090@gmail.com 
 
 ---
 
