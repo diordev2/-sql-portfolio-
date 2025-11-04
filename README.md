@@ -1,90 +1,98 @@
-# 🧠 SQL O‘rganish Portfeli
+# SQL va NoSQL O‘quv Rejasi: Laboratoriya Ishlari
 
-Assalomu alaykum!  
-Bu repozitoriya orqali men SQL bo‘yicha har kuni o‘rganayotgan mavzularimni kichik amaliy misollar orqali yozib boraman.  
-Har bir kun alohida `.sql` faylda saqlanadi — bu fayllarda real so‘rovlar, izohlar va o‘rganilgan operatorlar mavjud.
+Ushbu repository SQL va NoSQL bo‘yicha o‘quv laboratoriya ishlarini o‘z ichiga oladi. Har bir bo‘lim ma’lum bir darajadagi malakalarni rivojlantirishga qaratilgan.
 
 ---
 
-## 🎯 Maqsad
+## 📘 1️⃣ Beginning SQL (29 laboratoriya ishlari)
 
-- SQL sintaksisini mustahkamlash  
-- Har kuni yangi operator yoki funksiya bilan ishlash  
-- Kichik, lekin amaliy loyihalar orqali tajriba orttirish  
-- Ishga kirishda portfel sifatida namoyish qilish
+**Ma’lumotlar bazasini boshidan o‘rganish, asosiy SELECT so‘rovlarini yozish va natijalarni filtrlash.**
 
----
+**Skills:**
+| Skill | Laboratoriya ishlari soni |
+|-------|--------------------------|
+| Filtering data with `WHERE` | 8 |
+| Querying SQL from Python | 5 |
+| Basic Select statements | 4 |
+| Basic inline aggregations | 4 |
+| Limiting results and Pagination with `LIMIT/OFFSET` | 3 |
+| Order results with `ORDER BY` | 3 |
+| Beginning SQL Capstone Projects | 2 |
 
-## 📂 Tuzilma
-
-```
-
-sql-portfolio/
-│
-├── README.md                # Loyihaning umumiy tavsifi
-├── queries/                 # Har kunlik SQL mashqlar
-│   ├── day01_select_basics.sql
-│   ├── day02
-│   ├── day03
-│   ├── day04
-│   └── ...
-└── datasets/                # Foydalanilgan namunaviy ma'lumotlar
-
-```
+**Tags:**
+`SQL` (21) | `WHERE` (8) | `MySQL` (7) | `MySQL Python` (5) | `Inline Aggregations` (3) | `LIMIT` (3) | `SELECT Statement` (3) | `SQL Pagination` (3) | `ORDER BY` (2) | `Postgres` (2)
 
 ---
 
-# 🧠 SQL o‘rganish kundaligi
+## 📗 2️⃣ Intermediate SQL (45 laboratoriya ishlari)
 
-## 📅 Day 01 — SELECT asoslari
-Bugun SELECT operatori bilan tanishdim.
-- `SELECT *` jadvaldagi barcha ustunlarni ko‘rsatadi.
-- `AS` yordamida ustunlarga boshqa nom berish mumkin.
-- `CONCAT()` yordamida ism va familiyani birlashtirishni o‘rgandim.
-🧩 Amaliy mashq: [day01_select_basics.sql](queries/day01_select_basics.sql)
+**Malakalarni kengaytirish, JOINs, set operations, matn va matematik funksiyalar, vaqt va sana bilan ishlash.**
 
----
+**Skills:**
+| Skill | Laboratoriya ishlari soni |
+|-------|--------------------------|
+| Basic JOINs | 6 |
+| Logical Operators | 6 |
+| SQL Set operations | 6 |
+| String and Mathematical functions | 6 |
+| The LIKE operator | 6 |
+| Capstone Projects | 5 |
+| Date and Time functions | 5 |
+| Membership and Range Operators | 5 |
 
-## 📅 Day 02 — WHERE sharti
-Bugun `WHERE` operatori orqali ma’lumotlarni filtrlashni o‘rgandim.
-- `WHERE age > 20`
-- `AND` va `OR` operatorlarini ishlatish
-🧩 Amaliy mashq: [day02_where_clause.sql](queries/day02_where_clause.sql)
-
----
-
-## 🧩 Foydalanilgan Ma’lumotlar Bazasi
-
-Mashqlar davomida quyidagi namunaviy bazalardan foydalanilgan:
-
-- **Sakila** — MySQL demo database  
-- **Students** — o‘zim yaratgan kichik dataset (datasets/ papkasida)
+**Tags:**
+`SQL` (32) | `MySQL` (24) | `SQLite` (8) | `Knowledge Test` (5) | `SQL Joins` (5) | `Python` (4) | `Set Operations` (3) | `MySQL Python` (2) | `String and Mathematical Functions` (2) | `Capstone Project` (1)
 
 ---
 
-## 📅 Qanday Yuritaman
+## 📕 3️⃣ Advanced SQL (17 laboratoriya ishlari)
 
-- Har kuni yangi `.sql` fayl yarataman (`queries/dayXX_topic.sql`)  
-- O‘sha kunda o‘rganilgan SQL buyruqlarini yozaman  
-- `README.md` faylga yangi qator qo‘shaman  
-- Haftaning oxirida qisqacha “xulosa” yozaman
+**Murakkab so‘rovlar, guruhlash va shartli operatorlar, subqueries va full outer join.**
 
----
+**Skills:**
+| Skill | Laboratoriya ishlari soni |
+|-------|--------------------------|
+| GROUP BY and HAVING Clause | 5 |
+| Subqueries | 4 |
+| CASE statements | 3 |
+| Full Outer Join | 3 |
+| Advanced SQL Capstone Projects | 2 |
 
-## 🧭 Foydalanilgan Asboblar
-
-- **MySQL Workbench** — asosiy muhit  
-- **VS Code** — tahrirlash uchun  
-- **GitHub** — portfel yuritish uchun  
-
----
-
-## ✨ Aloqa
-
-Agar bu portfel sizga foydali bo‘lsa, yulduzcha ⭐ bosishni unutmang!  
-Savollar yoki takliflar uchun:  
-📧 ishsearch090@gmail.com 
+**Tags:**
+`SQL` (6)
 
 ---
 
-```
+## 🟢 4️⃣ NoSQL Databases (2 laboratoriya ishlari)
+
+**NoSQL texnologiyalarini boshlang‘ich darajada o‘rganish, Redis bilan ishlash.**
+
+**Skills:**
+| Skill | Laboratoriya ishlari soni |
+|-------|--------------------------|
+| Redis | 2 |
+
+**Tags:**
+`NoSQL` (2) | `Redis` (2)
+
+---
+
+## 💡 Repository Maqsadi
+
+Ushbu repository:
+
+- SQL va NoSQL bo‘yicha bosqichma-bosqich laboratoriya ishlarini to‘plab beradi.
+- Boshlang‘ichdan ilg‘or darajagacha malakalarni rivojlantirishga yordam beradi.
+- Python bilan SQL integratsiyasini o‘rganish imkonini beradi.
+- Capstone loyihalar orqali amaliy ko‘nikmalarni mustahkamlashga imkon yaratadi.
+## Savollar va takliflar uchun
+- https://profiles.datawars.io/maxsusonlineplotform0ne3
+- @Gulmirzayev_diyorbek (Telegram Link)
+- ishsearch090@gmail.com (Email Link)
+- +99893931133 (Bog'lanish uchun shaxsiy raqam)
+
+---
+
+## 🔗 Foydali Havolalar
+
+
